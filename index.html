@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yale School of Art</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="min-h-screen flex flex-col bg-gray-50">
+        <!-- Header -->
+        <header class="bg-[#00356B] text-white p-4" role="banner">
+            <div class="container mx-auto">
+                <div class="flex flex-row justify-between items-start gap-4">
+                    <h1 class="text-3xl font-bold">
+                        <a
+                            href="#inicio"
+                            class="hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#00356B]"
+                        >
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/en/c/c7/Yale_School_of_Art.png"
+                                alt="Yale Logo"
+                                class="h-12 w-auto"
+                            />
+                        </a>
+                    </h1>
+                    <button
+                        aria-label="Open main menu"
+                        class="p-2 hover:bg-blue-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-white"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Navigation -->
+        <nav class="bg-white border-b" aria-label="Main navigation">
+            <div class="container mx-auto px-4">
+                <ul class="flex flex-wrap gap-4 sm:gap-6 py-4">
+                    <li>
+                        <a
+                            href="#acerca-de"
+                            class="text-gray-700 hover:text-[#00356B] hover:underline focus:outline-none focus:ring-2 focus:ring-[#00356B] rounded-sm px-1"
+                            >Acerca de</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#programas"
+                            class="text-gray-700 hover:text-[#00356B] hover:underline focus:outline-none focus:ring-2 focus:ring-[#00356B] rounded-sm px-1"
+                            >Programas</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#admisiones"
+                            class="text-gray-700 hover:text-[#00356B] hover:underline focus:outline-none focus:ring-2 focus:ring-[#00356B] rounded-sm px-1"
+                            >Admisiones</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#exhibiciones"
+                            class="text-gray-700 hover:text-[#00356B] hover:underline focus:outline-none focus:ring-2 focus:ring-[#00356B] rounded-sm px-1"
+                            >Exhibiciones</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#noticias"
+                            class="text-gray-700 hover:text-[#00356B] hover:underline focus:outline-none focus:ring-2 focus:ring-[#00356B] rounded-sm px-1"
+                            >Noticias</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="main-content" class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Main Content Area -->
+                <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">
+                        Bienvenido a la Escuela de Arte de Yale
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        La Escuela de Arte es una de las universidades de Yale
+                        escuelas profesionales que ofrecen títulos de maestría
+                        en gráficos Diseño, Pintura/Grabado, Fotografía y
+                        Escultura y ofrece cursos de arte a nivel universitario.
+                        a los estudiantes de la Universidad de Yale.
+                    </p>
+
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h3
+                            class="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="10" y1="15" x2="10" y2="9"></line>
+                                <line x1="14" y1="15" x2="14" y2="9"></line>
+                            </svg>
+                            Aviso de accesibilidad
+                        </h3>
+                        <p class="text-gray-700">
+                            Este sitio web está diseñado para ser accesible a
+                            todos. usuarios. Si experimenta algún problema de
+                            accesibilidad, por favor contáctenos para obtener
+                            ayuda.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside
+                    class="bg-white p-6 rounded-lg shadow-sm"
+                    aria-label="Quick links"
+                >
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">
+                        Enlaces
+                    </h2>
+                    <nav aria-label="Quick links navigation">
+                        <ul class="space-y-4">
+                            <li>
+                                <a
+                                    href="#events-calendar"
+                                    class="flex items-center gap-2 text-[#00356B] hover:underline focus:outline-none focus:ring-2 focus:ring-[#00356B] rounded-sm px-1"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        aria-hidden="true"
+                                    >
+                                        <rect
+                                            x="3"
+                                            y="4"
+                                            width="18"
+                                            height="18"
+                                            rx="2"
+                                            ry="2"
+                                        ></rect>
+                                        <line
+                                            x1="16"
+                                            y1="2"
+                                            x2="16"
+                                            y2="6"
+                                        ></line>
+                                        <line
+                                            x1="8"
+                                            y1="2"
+                                            x2="8"
+                                            y2="6"
+                                        ></line>
+                                        <line
+                                            x1="3"
+                                            y1="10"
+                                            x2="21"
+                                            y2="10"
+                                        ></line>
+                                    </svg>
+                                    Calendario de eventos
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="ml-auto"
+                                        aria-hidden="true"
+                                    >
+                                        <polyline
+                                            points="9 18 15 12 9 6"
+                                        ></polyline>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#community-updates"
+                                    class="flex items-center gap-2 text-[#00356B] hover:underline focus:outline-none focus:ring-2 focus:ring-[#00356B] rounded-sm px-1"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
+                                        ></path>
+                                        <path
+                                            d="M13.73 21a2 2 0 0 1-3.46 0"
+                                        ></path>
+                                    </svg>
+                                    Actualizaciones de la comunidad
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="ml-auto"
+                                        aria-hidden="true"
+                                    >
+                                        <polyline
+                                            points="9 18 15 12 9 6"
+                                        ></polyline>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer
+            class="bg-gray-900 text-white w-full mt-auto text-center"
+            role="contentinfo"
+        >
+            <div class="container mx-auto px-4 py-8">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Contacto</h2>
+                        <address class="not-italic">
+                            <p>Escuela de Arte de Yale</p>
+                            <p>1156 Chapel Street, POB 208339</p>
+                            <p>New Haven, Connecticut 06520-8339</p>
+                        </address>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Recursos</h2>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#accesibilidad" class="hover:underline"
+                                    >Accesibilidad</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#politica-privacidad"
+                                    class="hover:underline"
+                                    >Política de privacidad</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#terminos-uso" class="hover:underline"
+                                    >Términos de uso</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Síganos</h2>
+                        <a
+                            class="hover:underline"
+                            href="https://www.instagram.com/yaleschoolofart/?hl=es"
+                            >Instagram</a
+                        >
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+                    <p>
+                        &copy; 2025 Escuela de Arte de Yale. Reservados todos
+                        los derechos.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
